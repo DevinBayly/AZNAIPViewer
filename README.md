@@ -28,11 +28,17 @@ to the head section also.
 
 Next you want to put the `<div>` that holds your map and the `<script>` with all your leaflet code under in between the `<body>` and its close tag `</body>`. Essentially the order you wrote them in the js file was correct, its just that was html in a javascript file. 
 
+**Styling** 
+leaflet is great, but I found that I have to style the div holder to actually fill my page and that's a bit of a pain. You can give it an inline style to make it take 100% of the visible height
+```<div id="map" style="height:100vh;"></div>```
+
 ## Making the repo a github page
 This is the same process that you did the last time we talked about turning that nice markdown doc you had into a website. 
 In the settings select the pages tab on the left hand side, click on the branch main, and then `/root` as the base folder. 
 
 ## Getting the right src for the iframe element to use on the imagery libguide page
 At this point you should have a website link something like `https://kcarini.github.io/AZNAIPViewer` if you add `/js` to the end of that you will get the page that is built from your `/js/index.html` where your leaflet code is.
+
+
 
 This means the iframe tag you need for your library webpage is `<iframe src="https://kcarini.github.io/AZNAIPViewer>` or something like that. I might have spelled some part wrong but that's the general idea. 
